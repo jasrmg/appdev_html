@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page Clone</title>
+      <!-- Other head content -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+  <nav>
+    <div class="left_side">
+      <img src="onlypans_logo.png" alt="OnlyPans Logo" class="logo">
+      <p class="title">OnlyPans</p>
+    </div>
+    
+    <div class="mid">
+      <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search..." class="searchbar">
+      </div>
+        <i class="fas fa-home icon home-icon"></i>
+        <i class="fas fa-heart icon heart-icon"></i>
+        <i class="fas fa-bell icon notification-icon"></i>
+    </div>
+
+    <div class="right">
+      <div class="user-avatar">
+        <img src="other.jpeg" alt="User Avatar" class="avatar">
+        <!-- <div class="user_details">
+          <p class="nav_name">Jeff Sarmago</p>
+          <p class="nav_username">@jasrmg0210</p>
+        </div> -->
+        
+        <span class="drop-down-arrow" onclick="toggleDropdown(event)">
+          <i class="fas fa-chevron-down"></i>
+        </span>
+        <div class="dropdown-content" id="userDropdown">
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="body">
+    <div class="profile">
+        <img src="https://via.placeholder.com/120" alt="Profile Picture">
+        <div>
+            <h1>Jeff Sarmago</h1>
+            <p>1.6K followers · 2.9K following</p>
+            <div class="followers_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follow_avatar">
+            </div>
+        </div>
+        <div class="buttons">
+          <button class="button">Follow</button>
+          <button class="button" id="editModalTrigger">Edit</button>
+
+        </div>
+    </div>
+<div class="body_content">
+  <div class="sidebar">
+      <p class="intro">Intro</p>
+      <div class="bio_container">
+        <p class="bio_text">above all, try</p>
+        <button class="edit_bio" id="editBioTrigger">Edit bio</button>
+
+      </div>
+      <!-- <div class="details_container">
+        <div class="info">Profile . Digital Creator</div>
+        <div class="info">Profile . Digital Creator</div>
+        <div class="info">Profile . Digital Creator</div>
+      </div> -->
+    <div class="followers_container">
+      <div class="follower_header">
+        <p class="follower_title">Follower</p>
+        <p class="number_of_follower">1,454 followers</p>
+      </div>
+      <div class="followers">
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">Name, LastName</p>
+        </div>
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">aSD tEST 1234 LONG NAME AAAAA</p>
+        </div>
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">Doriz</p>
+        </div>
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">Name, LastName</p>
+        </div>
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">Jelly Gwapa </p>
+        </div>
+        <div class="follower_card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s" alt="follower1" class="follower_picture">
+          <p class="follower_name">Doriz</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main_content">
+    <div class="createPost">
+      <img src="https://via.placeholder.com/120" alt="pp" class="avatar_post">
+      <input type="text" placeholder="What's cooking, Admin?">
+    </div>
+
+    <!--post-->
+    <div class="post">
+      <div class="post_header">
+          <img src="https://via.placeholder.com/50" alt="pp" class="avatar_post">
+          <div class="post_info">
+              <h3>Jeff Sarmago</h3>
+              <p>2 hours ago</p>
+          </div>
+      </div>
+      <div class="post_body">
+          <p>Here's a sample post. I'm trying a new recipe today: Chocolate Chip Cookies! 🍪</p>
+          <img src="https://via.placeholder.com/600x300" alt="post image" class="post_image">
+      </div>
+      <div class="post_footer">
+          <button class="like_button"><i class="fa-solid fa-heart"></i> Delicious</button>
+          <button class="comment_button"><i class="fa-solid fa-comment"></i> Comment</button>
+      </div>
+      <div class="comment_section">
+          <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
+          <input type="text" placeholder="Write a comment...">
+      </div>
+  </div>
+  <div class="post">
+    <div class="post_header">
+        <img src="https://via.placeholder.com/50" alt="pp" class="avatar_post">
+        <div class="post_info">
+            <h3>Jeff Sarmago</h3>
+            <p>2 hours ago</p>
+        </div>
+    </div>
+    <div class="post_body">
+        <p>Here's a sample post. I'm trying a new recipe today: Chocolate Chip Cookies! 🍪</p>
+        <img src="https://img.freepik.com/free-photo/delicious-cookies-arrangement_23-2150707201.jpg" alt="post image" class="post_image">
+    </div>
+    <div class="post_footer">
+        <button class="like_button"><i class="fa-solid fa-heart"></i> Delicious</button>
+        <button class="comment_button"><i class="fa-solid fa-comment"></i> Comment</button>
+    </div>
+    <div class="comment_section">
+        <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
+        <input type="text" placeholder="Write a comment...">
+    </div>
+</div>
+<div class="post">
+  <div class="post_header">
+      <img src="https://via.placeholder.com/50" alt="pp" class="avatar_post">
+      <div class="post_info">
+          <h3>Jeff Sarmago</h3>
+          <p>2 hours ago</p>
+      </div>
+  </div>
+  <div class="post_body">
+      <p>Here's a sample post. I'm trying a new recipe today: Chocolate Chip Cookies! 🍪</p>
+      <img src="https://via.placeholder.com/600x300" alt="post image" class="post_image">
+  </div>
+  <div class="post_footer">
+      <button class="like_button"><i class="fa-solid fa-heart"></i> Delicious</button>
+      <button class="comment_button"><i class="fa-solid fa-comment"></i> Comment</button>
+  </div>
+  <div class="comment_section">
+      <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
+      <input type="text" placeholder="Write a comment...">
+  </div>
+</div>
+<div class="post">
+  <div class="post_header">
+    <img src="https://via.placeholder.com/50" alt="pp" class="avatar_post">
+    <div class="post_info">
+      <h3>Jeff Sarmago</h3>
+      <p>2 hours ago</p>
+    </div>
+  </div>
+  <div class="post_body">
+    <p>Here's a sample post. I'm trying a new recipe today: Chocolate Chip Cookies! 🍪</p>
+    <img src="https://via.placeholder.com/600x300" alt="post image" class="post_image">
+  </div>
+  <div class="post_footer">
+    <button class="like_button"><i class="fa-solid fa-heart"></i> Delicious</button>
+    <button class="comment_button"><i class="fa-solid fa-comment"></i> Comment</button>
+  </div>
+  <!-- Sample comment -->
+<div class="comment">
+  <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
+  <div class="comment_content">
+    <div class="comment_info">
+      <h4>Maria Garcia</h4>
+      <p>1 hour ago</p>
+    </div>
+    <p>Those cookies sound delicious! I can't wait to try making them 🍪🤤</p>
+  </div>
+</div>
+<!-- Comment section -->
+<div class="comment_section">
+  <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
+  <input type="text" placeholder="Write a comment...">
+</div>
+
+</div>
+
+  
+  
+  </div>
+</div>
+</div>
+    
+
+<!--script for the dropdown beside the user-->
+<script>
+  function toggleDropdown(event) {
+    event.stopPropagation(); // Prevent event from bubbling up
+    document.getElementById("userDropdown").classList.toggle("show");
+  }
+
+</script>
+</body>
+</html>
