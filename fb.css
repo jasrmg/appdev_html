@@ -348,27 +348,7 @@ nav {
   border-radius: 8px;
 }
 
-/* .post_footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
 
-.post_footer button {
-  background-color: var(--accent-color);
-  color: var(--primary-color);
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-
-.post_footer button i {
-  margin-right: 5px;
-} */
 /* Center post footer buttons */
 .post_footer {
   display: flex;

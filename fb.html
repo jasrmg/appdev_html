@@ -29,16 +29,13 @@
     <div class="right">
       <div class="user-avatar">
         <img src="other.jpeg" alt="User Avatar" class="avatar">
-        <!-- <div class="user_details">
-          <p class="nav_name">Jeff Sarmago</p>
-          <p class="nav_username">@jasrmg0210</p>
-        </div> -->
-        
+
         <span class="drop-down-arrow" onclick="toggleDropdown(event)">
           <i class="fas fa-chevron-down"></i>
         </span>
         <div class="dropdown-content" id="userDropdown">
-          <a href="#">Settings</a>
+          <a href="#">Change Password</a>
+          <!--CHANGE PASSWORD MODAL-->
           <a href="#">Logout</a>
         </div>
       </div>
@@ -62,8 +59,8 @@
         </div>
         <div class="buttons">
           <button class="button">Follow</button>
-          <button class="button" id="editModalTrigger">Edit</button>
-
+          <button class="button" id="editProfileBtn">Edit</button>
+          <!--EDIT PROFILE MODAL-->
         </div>
     </div>
 <div class="body_content">
@@ -71,14 +68,9 @@
       <p class="intro">Intro</p>
       <div class="bio_container">
         <p class="bio_text">above all, try</p>
-        <button class="edit_bio" id="editBioTrigger">Edit bio</button>
-
+        <button class="edit_bio" id="editBioBtn">Edit bio</button>
+        <!--EDIT BIO MODAL-->
       </div>
-      <!-- <div class="details_container">
-        <div class="info">Profile . Digital Creator</div>
-        <div class="info">Profile . Digital Creator</div>
-        <div class="info">Profile . Digital Creator</div>
-      </div> -->
     <div class="followers_container">
       <div class="follower_header">
         <p class="follower_title">Follower</p>
@@ -115,7 +107,8 @@
   <div class="main_content">
     <div class="createPost">
       <img src="https://via.placeholder.com/120" alt="pp" class="avatar_post">
-      <input type="text" placeholder="What's cooking, Admin?">
+      <input type="text" placeholder="What's cooking, Admin?" id="createPostDiv">
+      <!--Create POST MODAL-->
     </div>
 
     <!--post-->
@@ -212,7 +205,8 @@
 <!-- Comment section -->
 <div class="comment_section">
   <img src="https://via.placeholder.com/40" alt="pp" class="avatar_post">
-  <input type="text" placeholder="Write a comment...">
+  <input type="text" placeholder="Write a comment..." id="addComment"> 
+  <!--Comment Modal-->
 </div>
 
 </div>
